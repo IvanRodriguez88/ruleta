@@ -8,9 +8,15 @@
 </head>
 <body>
 	<div class="rulete">
-		<canvas id="canvas" width="500" height="500"></canvas>
-		<div class="participants table">
-			<span>+</span>
+		<div>
+			<canvas id="canvas" width="500" height="500"></canvas>
+			<button id="spin">Girar</button>
+		</div>
+
+		<div class="participants">
+			<div class="row justify-end">
+				<button class="btn btn-add" id="addParticipant">+</button>
+			</div>
 			<table>
 				<thead>
 					<th>Nombre</th>
@@ -18,14 +24,16 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>Example</td>
-						<td>X</td>
+						<td>Ejemplo</td>
+						<td><button class="btn btn-delete">-</button></td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
-		<div class="todo table">
-			<span>+</span>
+		<div class="todo">
+			<div class="row justify-end">
+				<button class="btn btn-add" id="addTodo">+</button>
+			</div>
 			<table>
 				<thead>
 					<th>Nombre</th>
@@ -34,12 +42,26 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td>Example</td>
+						<td>Ejemplo</td>
 						<td>2</td>
-						<td>X</td>
+						<td><button class="btn btn-delete">-</button></td>
 					</tr>
 				</tbody>
 			</table>
+		</div>
+	</div>
+
+	<div class="results">
+		<div class="card">
+			<div class="work">
+				<h2>Nombre de la tarea</h2>
+			</div>
+			<div class="people">
+				<ul>
+					<li>Persona 1</li>
+					<li>Persona 2</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </body>

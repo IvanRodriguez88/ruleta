@@ -1,7 +1,9 @@
 $( document ).ready(function() {
-	options = ["Prueba"];
+	options = ["Prueba", "Prueba", "Prueba", "Prueba", "Prueba"];
 	init()
 	drawRouletteWheel();
 });
 
-document.getElementById("spin").addEventListener("click", spin);
+$("#spin").on('click', () => {
+	spin()
+})
